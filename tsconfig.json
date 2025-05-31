@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                   // Modern JS target
+    "module": "ESNext",                   // Use ES modules
+    "moduleResolution": "Node",           // Resolve modules like Node.js
+    "esModuleInterop": true,              // Enable default imports from CommonJS modules
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,                 // Skip checking types in node_modules
+    "allowJs": true,                      // Allow importing .js files
+    "resolveJsonModule": true,            // Allow importing .json files
+    "jsx": "react-jsx",                   // Enable JSX (for React 17+)
+    "strict": false,                      // Temporarily disable all strict checks
+    "noImplicitAny": false,               // Allow implicit any types (reduces a ton of errors)
+    "outDir": "dist",                     // Emit compiled files to dist/
+    "rootDir": "src",                     // Root of your source files
+    "baseUrl": ".",                       // So we can use absolute imports if needed
+    "paths": {}                           // (You can add path aliases here later)
+  },
+  "include": ["src/**/*"],               // Include all TS/TSX/JS files under src/
+  "exclude": ["node_modules", "dist"]    // Exclude node_modules and dist/
+}
