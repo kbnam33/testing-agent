@@ -7,6 +7,7 @@ import { AIAgent } from './ai-agent';
 import { ProjectManager } from './project-manager';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import 'dotenv/config';
 
 // Load environment variables
 import 'dotenv/config';
